@@ -5,8 +5,9 @@ $(function () {
   $("#addBtn").click(addRecipe);
   $("#updateSave").click(function () {
     var id = $("#updateId").val();
-    var isUser = $("#title").val();
-    var fullName = $("#body").val();
+    var isUser = $("#updateTitle").val();
+    var fullName = $("#updateBody").val();
+    console.log(isUser, fullName)
     $.ajax({
       url: "https://retoolapi.dev/yMJB3q/userpayments/" + id,
       data: { isUser, fullName },
