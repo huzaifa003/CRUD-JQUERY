@@ -78,7 +78,7 @@ function loadRecipies() {
         var rec = response[i];
         if (true) {
           recipes.append(
-            `<div class="recipe" data-id="${rec.id}"><h3>This used paid by (${rec.isUser})</h3><p><button class="btn btn-danger btn-sm float-right">delete</button><button class="btn btn-warning btn-sm float-right">Edit</button> ${rec.fullName}</p></div>`
+            `<div class="recipe" data-id="${rec.id}"><h3>This is paid by (${rec.isUser})</h3><p><button class="btn btn-danger btn-sm float-right">delete</button><button class="btn btn-warning btn-sm float-right">Edit</button> ${rec.fullName}</p></div>`
           );
         }
        
